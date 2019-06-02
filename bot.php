@@ -5,11 +5,10 @@ Modified by Ilyasa
 2017
 */
 require_once('./line_class.php');
-$channelAccessToken = 'EotZEpG2qDMUid8W5OJYd7qLxKWCTxcjgo645sGJu1RUfU+0EUUnXGCwRNMNFZbyGzWegoZ/U+9fD+fMopZDxuBXulkQxVlAmKRgFOg+rZQrfii/No+Hj3R8Szvyrdjy0EpjhKTA6R6uUdeBJINqTAdB04t89/1O/w1cDnyilFU=
-'; //sesuaikan 
-$channelSecret = '0f1f99807ee71d1a4df0d51b6ccfd33c';//sesuaikan
+$channelAccessToken = '4+ck59fwGpQ1uW5jKvGlTeFEh5RD7McSmOa4uwUv0Kkhq+OpMgcoZOkz4Pm3CB9NGzWegoZ/U+9fD+fMopZDxuBXulkQxVlAmKRgFOg+rZQgKUWAugWpW/vKgrsE3/hPH4+H/IeIQSOhLBxZ9rsWbQdB04t89/1O/w1cDnyilFU='; //sesuaikan 
+$channelSecret = '';//sesuaikan
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
-$userId 	= $client->parseEvents()[0]['source']['userId'];
+$userId 	=Issue $client->parseEvents()[0]['source']['userId'];
 $replyToken = $client->parseEvents()[0]['replyToken'];
 $message 	= $client->parseEvents()[0]['message'];
 $profil = $client->profil($userId);
